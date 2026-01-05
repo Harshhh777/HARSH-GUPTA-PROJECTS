@@ -9,6 +9,361 @@
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
+<style>
+    body {
+    font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: #05ec09;
+    margin:0px;
+    padding: 0px;
+}script{
+    border-radius: 10px;
+    display: flex;
+    margin: 2;
+    align-items: center;
+    justify-content: center;
+}.container {
+    max-width: 80px;
+    margin: 0 auto;
+    padding: 8px;
+}.card-container {
+    display: block;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 12px;
+}.card {
+    width: 500px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+}.card img {
+    width: 30%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}.card:hover {
+    transform: scale(1.02);
+    background-color: #05ec09;
+    ;
+}h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #f5f5f5;
+}.hover-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+}form{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}div {
+    color: #05ec09;
+    border-radius: 4px;
+    padding: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}header {
+    background-image: url(https://wallpapercave.com/wp/wp4869764.jpg);        
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}header a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}header a:hover {
+    text-decoration: underline;
+}.container {
+    max-width: 400px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #05ec09;
+}nav{
+    text-align: center;
+}h3{
+    text-align: center;
+    color: white;
+}h4{
+    color: red;
+}p{
+    color: #05ec09;
+}nav button{
+    background-color: black;
+    color: black;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 0px;
+    cursor: pointer;
+}h1{
+    text-decoration:dotted;
+    text-align: center;
+    align-items: center;
+    color: #05ec09; 
+    font-family: "Copperplate", "Fantasy", monospace;
+}footer{
+    text-align: center;
+}label{
+    text-align: center;
+}.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #08000051;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.6);
+}.box:hover input {
+    width: 400px;
+} .box input {
+    width: 0px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+} .box a.fa-solid {
+    color:black;
+    font-size: 18px;
+} .parallex {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 200vh;
+    background: url(https://cdn.wallpapersafari.com/54/3/150Mub.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}#text{
+    position:relative;
+    font-size: 5em;
+    color: #1b283a
+    text-shadow 2px 4px 5px white;
+}.parallex img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}.parallex img#gate-Left{
+    position: fixed;
+    transform: translateX(-282px);
+}.card{
+    width: 400px;
+    aspect-ratio: 1/0.7;
+    border-radius: 8px;
+    position: relative;
+}.card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}.card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.card:hover img{
+    filter:
+    grayscale(1)
+    brightness(0.4);
+}
+.card:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+.card:hover .content h2{
+    scale: 1;
+    opacity: 1;
+}
+.card:hover .content P{
+    opacity: 1;
+    transform: translateY(0);
+}form{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}.artist-card {
+    width: 200px;
+    height: 300px;
+    background-color:  rgb(54, 48, 48);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}.artist-card:hover {
+    transform: translateY(-10px);
+}.artist-image {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}.artist-info {
+    padding: 20px;
+    text-align: center;
+}.artist-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}.artist-genre {
+    color: #777;
+}.artist-description {
+    font-size: 0.9em;
+    color: #555;
+}.leaderboard-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}th {
+    background-color: #05ec09;
+    color: black;
+}tr:hover {
+    background-color: black;
+}.artist {
+    font-weight: bold;
+}.streams {
+    color: #6c63ff;
+    font-weight: bold;
+}.position {
+    text-align: center;
+    font-weight: bold;
+}body {
+    font-family: Arial, sans-serif;
+}.footer {
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}.footer .social-icons {
+    margin: 20px 0;
+}.footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}.footer .social-icons a:hover {
+    color:  purple;
+}.footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}.header {
+    background-color: black;
+    color: #fff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+}.header .logo {
+    font-size: 15px;
+    font-weight: bold;
+}.header nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}.header nav a {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 8px;
+    font-size: 14px;
+    transition: color 0.3s;
+}.header nav a:hover {
+    color: #610b47; 
+    justify-content: center;
+    text-align: center;
+}.header .social-icons a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+    justify-content: center;
+    text-align: center;
+}.header .social-icons a:hover {
+    color: #1db954; 
+    justify-content: center;
+    text-align: center;
+}.Project_title__7ug2y {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+    width: 50%;
+    letter-spacing: 2px;
+    line-height: .9
+}
+@media(min-width:769px){
+    .Project_title__7ug2y {
+       font-size: 10rem
+    }
+}.Project_smallTitle__x7425{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    width: 50%;
+    letter-spacing: 4px;
+    line-height: 1.2;
+}.library-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    background-color: white; 
+    color: black;
+    font-size: 100px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}.library-button i {
+    margin-right: 8px;
+}.library-button:hover {
+    background-color: white; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+</style>
     <body>
         <header>
             <a href="file:///C:/Users/hp/Downloads/HARSH%20GUPTA%20RESUME.pdf">🔗 🔗</a>
@@ -339,3 +694,4 @@
     </footer>
 </body>
 </html>
+
