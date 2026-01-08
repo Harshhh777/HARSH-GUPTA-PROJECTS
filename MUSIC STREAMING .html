@@ -9,8 +9,9 @@
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
+
 <style>
-    body {
+body {
     font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     color: #05ec09;
@@ -23,41 +24,45 @@
     align-items: center;
     justify-content: center;
 }.container {
-    max-width: 80px;
-    margin: 0 auto;
-    padding: 8px;
-}.card-container {
-    display: block;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 12px;
-}.card {
-    width: 500px;
+    max-width: 35px;
+    margin: 0 fixed;
     padding: 3px;
+}.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 7px;
+}.card {
+    width: 100px;
+    padding: 5px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 3px;
     background: #111;
-    color: #fff;
+    color: #05ec09;
 }.card img {
-    width: 30%;
-    height: 170px;
+    width: 95%;
+    height: 160px;
     object-fit: cover;
     border-radius: 0px;
     margin-bottom: 0px;
 }.card:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     background-color: #05ec09;
-    ;
+    color: white;
 }h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 24px;
     color: #f5f5f5;
+}h5{
+    color: black;
 }.hover-link {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-    color: #333;
+    color: #05ec09;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s, background-color 0.3s;
@@ -84,9 +89,9 @@
 }header a:hover {
     text-decoration: underline;
 }.container {
-    max-width: 400px;
-    padding: 0px;
-    margin: 0px;
+    max-width: 450px;
+    padding: 2px;
+    margin: 2px;
     background-color: #05ec09;
 }nav{
     text-align: center;
@@ -94,9 +99,18 @@
     text-align: center;
     color: white;
 }h4{
-    color: red;
+    color: #05ec09;
+    text-align: center;
 }p{
     color: #05ec09;
+}a{
+    color: #05ec09;
+    background-color: black;
+    justify-content: center;
+}i{
+    background-color: black;
+    color: #05ec09;
+    justify-content: center;
 }nav button{
     background-color: black;
     color: black;
@@ -122,7 +136,7 @@
     background: #08000051;
     border-radius: 30px;
     align-items: center;
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 15px white;
 }.box:hover input {
     width: 400px;
 } .box input {
@@ -160,21 +174,21 @@
     position: fixed;
     transform: translateX(-282px);
 }.card{
-    width: 400px;
-    aspect-ratio: 1/0.7;
-    border-radius: 8px;
-    position: relative;
+    width: 320px;
+    aspect-ratio: 1/1;
+    border-radius: 70px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }.card .image-box img{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
     transition: 0.5s ease-in-out;
 }.card::after{
     content: "";
     position: absolute;
     inset: 0;
-    border: 2px solid white;
-    border-radius: inherit;
     opacity: 0;
     transition: 0.4s ease-in-out;
 }
@@ -185,7 +199,7 @@
 }
 .card:hover::after {
     opacity: 1;
-    inset: 20px;
+    inset: 10px;
 }
 .card:hover .content h2{
     scale: 1;
@@ -199,19 +213,19 @@
     justify-content: center;
     align-items: center;
 }.artist-card {
-    width: 200px;
-    height: 300px;
-    background-color:  rgb(54, 48, 48);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    height: 310px;
+    background-color:#111;
+    border-radius: 25   px;
+    box-shadow: 0 6px 8px white; 
     overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease;
+    position: center;
+    transition: transform 0.2s ease;
 }.artist-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(+12px);
 }.artist-image {
-    width: 100%;
-    height: 60%;
+    width: 75%;
+    height: 70%;
     background-size: cover;
     background-position: center;
 }.artist-info {
@@ -221,14 +235,14 @@
     font-size: 1.2em;
     margin-bottom: 10px;
 }.artist-genre {
-    color: #777;
+    color: #05ec09;
 }.artist-description {
-    font-size: 0.9em;
-    color: #555;
+    font-size: 1.0em;
+    color: #05ec09;
 }.leaderboard-container {
     max-width: 600px;
     margin: auto;
-    background-color: black;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -244,7 +258,7 @@
     background-color: #05ec09;
     color: black;
 }tr:hover {
-    background-color: black;
+    background-color: grey;
 }.artist {
     font-weight: bold;
 }.streams {
@@ -256,28 +270,24 @@
 }body {
     font-family: Arial, sans-serif;
 }.footer {
-    background-color: #282828;
-    color: #fff;
+    background-color: #05ec09;
+    color: #0000;
     text-align: center;
-    padding: 5px 0;
+    padding: 9px 0;
+    width: 100%;
 }.footer .social-icons {
-    margin: 20px 0;
+    margin: 22px 0;
 }.footer .social-icons a {
-    margin: 0 10px;
+    margin: 0 18px;
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     transition: color 0.3s;
 }.footer .social-icons a:hover {
-    color:  purple;
+    color: red;
 }.footer p {
-    margin: 8px 0;
+    margin: 5px 0;
     font-size: 14px;
-}body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }.header {
     background-color: black;
     color: #fff;
@@ -359,21 +369,63 @@
 }.library-button i {
     margin-right: 8px;
 }.library-button:hover {
-    background-color: white; 
+    background-color: grey; 
     transform: translateY(-2px); 
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
+
+
+.music-player {
+  position: fixed;
+  bottom: 0;
+  border-radius: 6px;
+  width: 45%;
+  background: #0b0b0b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  color: white;
+  border: white;;
+  box-shadow: 0 -5px 20px grey;
+}.song-info {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}.song-info img {
+  width: 80px;
+  border-radius: 9px;
+}.controls button {
+  background: none;
+  color: #05ec09;
+  border: white;
+  font-size: 29px;
+  cursor: pointer;
+}
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: crimson;
+  padding: 15px;
+  color: white;
+  border-radius: 8px;
+  display: none;
+}
+    
 </style>
+        
     <body>
-        <header>
-            <a href="file:///C:/Users/hp/Downloads/HARSH%20GUPTA%20RESUME.pdf">🔗 🔗</a>
-            <a href="#">Sign Up</a>
-        </header>   
     <header>
-        <div>
+        <a href="file:///C:/Users/hp/Downloads/HARSH%20GUPTA%20RESUME.pdf">🔗 🔗</a>
+        <a href="#">Sign Up</a>
+    </header>   
+    <header> 
+      <div>
+        <script src="javascript.js"></script>
         <a href="./DOM(SELECTOR)/PROPERTIES ON HTML ELEMENT/LOGIN/login.html">Login</a>
         <br><br><br><br>
-    </div>
+      </div>
     <img src="https://play-lh.googleusercontent.com/MOAFXxl559no_4t7gC8f1ko-wuNAUOzB4Y_V-JZi9EJFYvtjraVUJ-1FS_bW5UTy20g" width="500" height="270" margin="5px">
     <div class="box">
         <input type="text" name="" id="" placeholder="What do you want you listen to?">
@@ -382,17 +434,15 @@
         </a>
     </div>
 </header>
-    <script src="./app.js"></script>
 <br><br><br>
 <nav>
-        <button> <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_large.jpg" alt="1" width="240" height="155" hspace="11"></button>
-        <button> <img src="https://www.kolibrimusic.com/wp-content/uploads/2017/10/spotify-top-50-global.jpg" alt="1" width="240" height="155" hspace="11"></button>
-        <button> <img src="https://tse2.mm.bing.net/th?id=OIP.lKQ5PJMrH7ZOh_pJbY19-wHaEu&pid=Api&P=0&h=180" alt="1" width="240" height="155" hspace="11"></button>
-        <button> <img src="https://s.saregama.tech/image/c/m/4/70/d0/80s-chartbuster-songs_1522085705.jpg" alt="1" width="240" height="155" hspace="11"> </button>
-        <button> <img src="https://tse4.mm.bing.net/th/id/OIP.u0EIxE8IJQNf1XSP3r6pygHaHa?pid=Api&P=0&h=180" alt="1" width="240" height="155" hspace="11"></button>
-</nav>
-<br><br><br><hr>
-<h1>🎶🎧🎼🎹🎷🎸🎻🎙🪕🔊</h1><br>
+    <button> <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_large.jpg" alt="1" width="220" height="130" hspace="6"></button>
+    <button> <img src="https://www.kolibrimusic.com/wp-content/uploads/2017/10/spotify-top-50-global.jpg" alt="1" width="220" height="130" hspace="6"></button>
+    <button> <img src="https://tse2.mm.bing.net/th?id=OIP.lKQ5PJMrH7ZOh_pJbY19-wHaEu&pid=Api&P=0&h=180" alt="1" width="220" height="130" hspace="6"></button>
+    <button> <img src="https://s.saregama.tech/image/c/m/4/70/d0/80s-chartbuster-songs_1522085705.jpg" alt="1" width="220" height="130" hspace="6"> </button>
+    <button> <img src="https://tse4.mm.bing.net/th/id/OIP.u0EIxE8IJQNf1XSP3r6pygHaHa?pid=Api&P=0&h=180" alt="1" width="220" height="130" hspace="6"></button>
+</nav><br><br><br><hr>
+<h1>🎶🎧🎼🎹🎷🎸🎻🔊</h1><br>
     <p>MUSIFY💎 introduces Leaderboard platform for the users to upload their playlists & claim discounted price on the musify subscription, Catering to diverse musical tastes & preferenced users around the globe 🌎.</p><br>
     <p>It aims to gift something for everyone, making it top choice in the competitive music streaming industry.It allows the user to have a great experience offline as it provides user with MUSIFY PREMIUM💎.</p><br>
     <p>PERSONALIZED PLAYLISTS: Access to millions of songs from popular as well as emerging artists along with a great space for the user around the globe.</p><br>
@@ -403,18 +453,18 @@
 </div> <br><br><br>
   <div class="card-container">
     <div class="card">
-        <span>PODCASTS 🎧</span>
-        <img src="https://tse2.mm.bing.net/th/id/OIP.ViKgy6N3bX4GLwF6OhNJhQHaHa?pid=Api&P=0&h=180" alt="Podcasts">
-    </div>
-    <div class="card">
-        <span>TOP 50 📈</span>
-        <img src="https://tse2.mm.bing.net/th/id/OIP.OtSishzLcwXDaLg_nNjWjwHaHa?pid=Api&P=0&h=180" alt="Top 50">
-    </div>
-    <div class="card">
-        <span>LEADERBOARD 🏆</span>
-        <img src="https://i.pinimg.com/originals/5d/ee/e1/5deee1fb2496f84696c00e0c8b0bddf4.jpg" alt="Leaderboard">
-    </div>
-</div><br><br><br><br><br><br><br><br><br><br><br><br>
+    <span>PODCASTS 🎧</span><hr><br>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.ViKgy6N3bX4GLwF6OhNJhQHaHa?pid=Api&P=0&h=180" alt="Podcasts" width="30" height="400" hspace="2">
+  </div>
+  <div class="card">
+    <span>TOP 50 📈</span><hr><br>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.OtSishzLcwXDaLg_nNjWjwHaHa?pid=Api&P=0&h=180" alt="Top 50" width="30" height="40" hspace="2">
+  </div>
+  <div class="card">
+    <span>LEADERBOARD 🏆</span><hr><br><br>
+    <img src="https://i.pinimg.com/originals/5d/ee/e1/5deee1fb2496f84696c00e0c8b0bddf4.jpg" alt="Leaderboard" width="30" height="40" hspace="2">
+  </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
 <h1>Bollywood Chartbusters</h1>
 <img src="https://cdn.zeebiz.com/sites/default/files/2023/12/05/271516-animal.jpg?im=FitAndFill=(1200,900).jpg" alt="1" width="200" height="200" hspace="5">
@@ -487,21 +537,21 @@
         </tr>
         <tr>
             <td>3</td>
-            <td>Yukti</td>
+            <td>Gunjann</td>
             <td>#970</td>
             <td>98k</td>
             <td>India</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>Bhanvi</td>
+            <td>Akshat</td>
             <td>#555</td>
             <td>77k</td>
             <td>India</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>Akshat</td>
+            <td>Dimple</td>
             <td>#666</td>
             <td>72k</td>
             <td>India</td>
@@ -622,24 +672,23 @@
         <div class="artist-image" style="background-image: url('https://wallpapers.com/images/file/sidhu-moose-wala-punjabi-song-approach-6hp9v95835enzff5.jpg');"></div>
         <div class="artist-info">
             <div class="artist-name">6. Sidhu Moosewala</div>
-            <div class="artist-genre">Musician</div>
+            <div class="artist-genre">Rapper</div>
         </div>
       </div>
-
 </html>
 <hr><br>
-
     <form class="fr" action=""></form>
-    <h4>Enjoying the experience ??  </h4>
-    <h2>RATE MUSIFY💎</h2>
-        <label class="fr__label" for="face-rating">😡--------🥶---------😃</label>
+    <h3>ENJOYING THE EXPERIENCE ??</h3>
+    <h4>RATE MUSIFY🎵</h4>
+    <h2>👇</h2>
+    <input class="fr__input" id="face-rating" type="range" value="2.5" min="0" max="11" step="0.1"><br>
+        <label class="fr__label" for="face-rating">😡----------🥶-----------😃</label>
         <div class="fr__face" role="img" aria-label="Straight face">
             <div class="fr__face-right-eye" data-right></div>
             <div class="fr__face-left-eye" data-left></div>
             <div class="fr__face-mouth-lower" data-mouth-lower></div>
-            <div class="fr__face-mouth-upper" data-mouth-upper></div>
+            <div class="fr__face-mouth-upper" data-mouth-upper></div>   
         </div>
-        <input class="fr__input" id="face-rating" type="range" value="2.5" min="0" max="5" step="0.1">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -656,6 +705,7 @@
         <p class="Project_smallTitle__x7425">tum hi ho</p>
         <p class="Project_smallTitle__x7425">chaleya</p>
         <p class="Project_smallTitle__x7425">apna bana le</p>
+        <p class="Project_smallTitle__x7425">bedardeya</p>
 
     <div class="Project_canvasWrapper_CSgsq"></div>
     <div class="">
@@ -665,6 +715,7 @@
         <p class="Project_smallTitle__x7425">kaise hua</p>
         <p class="Project_smallTitle__x7425">aaj bhi</p>
         <p class="Project_smallTitle__x7425">janiye</p>
+        <p class="Project_smallTitle__x7425">sande se aate hai</p>
 
     <div class="Project_canvasWrapper_CSgsq"></div>
     <div class="">
@@ -674,24 +725,48 @@
         <p class="Project_smallTitle__x7425">namuna</p>
         <p class="Project_smallTitle__x7425">kodak</p>
         <p class="Project_smallTitle__x7425">lukka chippi</p>
+        <p class="Project_smallTitle__x7425">khatta flow</p>
 
     <div class="Project_canvasWrapper_CSgsq"></div>
     <div class="">
         <div data-motion-carousel="gridTitleWrapper" class="Project_titleWrapper__DDkOC">
         <p class="Project_title__7ug2y">SHASHWAT SACHDEV</p>
         <p class="Project_smallTitle__x7425">gajoor</p>
-        <p class="Project_smallTitle__x7425">jogi(ft. dhurandhar)</p>
+        <p class="Project_smallTitle__x7425">dhurandhar title track</p>
         <p class="Project_smallTitle__x7425">eze-eze</p>
         <p class="Project_smallTitle__x7425">monica o' my darling</p>
     <br><br><br>
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.snapchat.com" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
-        </div>
-        <p>&copy; 2025 Musify. All Rights Reserved.</p>
-    </footer>
+
+
+    <div class="music-player">
+  <div class="song-info">
+    <img src="https://imgx.sonora.id/crop/0x0:0x0/700x465/filters:format(webp):quality(50)/photo/2024/02/26/lirik-lagu-end-of-beginningjpg-20240226071922.jpg" alt="Album">
+    <div>
+      <h3 id="song-title">End of Beginning</h3>
+      <p id="artist">Djo</p>
+    </div>
+  </div>
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+  <input type="range" id="progress" value="0">
+</div>
+<audio id="audio" src="file:///C:/Users/hp/Downloads/End_Of_Beginning.mp3"></audio>
+
+<div id="toast"></div>
+
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.snapchat.com" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+    </div>
+    <h5>&copy; 2025 Musify. All Rights Reserved.</h5>
+</footer>
 </body>
 </html>
+
+
 
